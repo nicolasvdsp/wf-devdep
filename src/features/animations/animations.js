@@ -2,7 +2,7 @@ import allGsapAnimations from './gsapanimations';
 import smoothscrolling from './scroll';
 
 function customAnimations() {
-  allGsapAnimations();
+  // allGsapAnimations();
   smoothscrolling();
 }
 
