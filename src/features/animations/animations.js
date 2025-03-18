@@ -1,8 +1,13 @@
-import allGsapAnimations from './gsapanimations';
 import smoothscrolling from './scroll';
 
 function customAnimations() {
-  // allGsapAnimations();
+  if (import.meta.env.DEV) {
+    import('./gsapanimations').then((module) => {
+      const allGsapAnimations = module.default;
+      allGsapAnimations();
+    });
+  }
+
   smoothscrolling();
 }
 
